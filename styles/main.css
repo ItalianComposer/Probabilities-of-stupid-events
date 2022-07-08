@@ -154,7 +154,10 @@
     width: 80%; }
 
   .prob-result {
-    font-size: 26px; }
+    font-size: 26px;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 0vw; }
 
   .events-form_controls__button {
     width: 100%; }
