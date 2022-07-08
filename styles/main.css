@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+.header-title {
+  text-align: center;
+  max-width: 50%;
+  margin: 0 25vw;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.header-title_text {
+  font: 100% "Rubik", sans-serif;
+  color: #000; }
+
+.header-description {
+  text-align: center;
+  max-width: 75%;
+  margin: 0 15vw;
+  margin-bottom: 20px; }
+
+.header-description_text {
+  font: 100% "Rubik", sans-serif;
+  color: #000; }
+
+.result-button {
+  padding: 0.9em 1.6em;
+  border: none;
+  outline: none;
+  color: #FFF;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 17px;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 12px;
+  vertical-align: middle; }
+
+.result-button::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #2e2e2e;
+  left: 0;
+  top: 0;
+  border-radius: 10px; }
+
+.result-button::before {
+  content: "";
+  background: linear-gradient(45deg, #FF0000, #002BFF, #FF00C8, #002BFF, #FF0000, #002BFF, #FF00C8, #002BFF);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+  opacity: 0; }
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0; }
+  50% {
+    background-position: 400% 0; }
+  100% {
+    background-position: 0 0; } }
+.result-button:hover::before {
+  opacity: 1; }
+
+.result-button:active:after {
+  background: transparent; }
+
+.result-button:active {
+  color: #000;
+  font-weight: bold; }
+
+.events-form {
+  max-width: 75%;
+  margin: 0 15vw; }
+
+.events-select {
+  width: 100%;
+  height: 40px;
+  font: 100% "Rubik", sans-serif; }
+
+.events-select_box {
+  width: 32.6%;
+  display: inline-block; }
+
+.select-box_description {
+  text-align: center;
+  margin-bottom: 5px; }
+
+.events-form_ps {
+  font: 100% "Rubik", sans-serif;
+  color: #000;
+  font-size: 14px;
+  line-height: 10px;
+  display: inline-block;
+  opacity: 0.2;
+  width: 100%;
+  max-width: 300px;
+  margin-left: 10px;
+  vertical-align: middle; }
+
+.events-form_controls {
+  margin-top: 20px; }
+
+.events-form_controls__button {
+  width: 49%;
+  display: inline-block;
+  box-sizing: border-box; }
+
+.events-form_controls__ps {
+  width: 49%;
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: right; }
+
+.prob-result {
+  font: 100% "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  color: #fcb216;
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  max-width: 50%;
+  margin: 0 25vw;
+  margin-top: 35px;
+  text-align: center; }
+
+html, body, p, div {
+  margin: 0;
+  padding: 0; }
+
+.font-rubik {
+  font: 100% "Rubik", sans-serif;
+  color: #000;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles/main.css">
+  <script type="text/javascript" src="scripts/main.js"></script>
+  <title>Probabilities of stupid events</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header-title font-rubik">
+      <p class="header-title_text">Узнай вероятность!</p>
+    </div>
+    <div class="header-description">
+      <p class="header-description_text">Здесь ты можешь узнать вероятность различных абсурдных и дурацких событий</p>
+      <p class="header-description_text">И помни: вероятность чего-то может быть очень маленькой, но никогда не равна нулю</p>
+    </div>
+  </header>
+  <form class="events-form" name="prob">
+    <div class="events-select_box">
+      <p class="select-box_description">Действие</p>
+      <select class="events-select" name="action">
+        <option value="0.0552">Встретить</option>
+        <option value="0.0792">Увидеть</option>
+        <option value="0.0019">Быть убитым</option>
+        <option value="0.0889">Быть съеденным</option>
+        <option value="0.0556">Найти</option>
+        <option value="0.0303">Быть изнасилованным</option>
+      </select>
+    </div>
+    <div class="events-select_box">
+      <p class="select-box_description">Объект</p>
+      <select class="events-select" name="object">
+        <option value="0.0338">Обезьяна</option>
+        <option value="0.0050">Корова</option>
+        <option value="0.0145">Мышь на питоне</option>
+        <option value="0.0655">Пришелец</option>
+        <option value="0.0814">Комар</option>
+        <option value="0.0062">Паук</option>
+        <option value="0.0206">Лягушка</option>
+      </select>
+    </div>
+    <div class="events-select_box">
+      <p class="select-box_description">Место</p>
+      <select class="events-select" name="place">
+        <option value="0.0717">Подъезд</option>
+        <option value="0.0189">Подвал</option>
+        <option value="0.0695">Улица</option>
+        <option value="0.0059">Лифт</option>
+        <option value="0.0926">Балкон</option>
+      </select>
+    </div>
+    <div class="events-form_controls">
+      <div class="events-form_controls__button">
+        <button class="result-button" type="button" name="calc" onClick="calcProb();">Расчитать</button>
+      </div>
+      <div class="events-form_controls__ps">
+        <p class="events-form_ps">Вероятность этого и других событий расчитана приблизительно и скорее является шуткой</p>
+      </div>
+
+    </div>
+  </form>
+  <div class="prob-result" id="res"></div>
+  <footer class="footer">
+
+  </footer>
+</body>
+</html>

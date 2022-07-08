@@ -1,0 +1,24 @@
+.header {
+
+}
+.header-title {
+  text-align: center;
+  max-width: 50%;
+  margin: 0 25vw;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.header-title_text {
+  font: 100% $main-font;
+  color: $main-text-color;
+}
+.header-description {
+  text-align: center;
+  max-width: 75%;
+  margin: 0 15vw;
+  margin-bottom: 20px;
+}
+.header-description_text {
+  font: 100% $main-font;
+  color: $main-text-color;
+}
