@@ -61,10 +61,27 @@
       <div class="events-form_controls__ps">
         <p class="events-form_ps">Вероятность этого и других событий расчитана приблизительно и скорее является шуткой</p>
       </div>
-
     </div>
   </form>
   <div class="prob-result" id="res"></div>
+  <div class="custom-events_title">
+    Или ты можешь придумать своё глупое, невозможное событие и узнать его вероятность!
+  </div>
+  <form class="events-form_custom" name="probCustom">
+    <div class="custom-events_box">
+      <input class="custom-events_input" type="text" name="actionCustom" value="" placeholder="Действие">
+    </div>
+    <div class="custom-events_box">
+      <input class="custom-events_input" type="text" name="objectCustom" value="" placeholder="Объект">
+    </div>
+    <div class="custom-events_box">
+      <input class="custom-events_input" type="text" name="placeCustom" value="" placeholder="Место">
+    </div>
+    <div class="custom-events_controls">
+      <button class="result-button" type="button" name="calc" onsubmit="return validate_form();" onClick="calcCustom();">Расчитать</button>
+    </div>
+  </form>
+  <div class="prob-result" id="resCustom"></div>
   <footer class="footer">
 
   </footer>

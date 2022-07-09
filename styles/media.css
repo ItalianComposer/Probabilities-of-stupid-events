@@ -1,46 +1,46 @@
 @media (max-width: 520px) {
   .header-title {
-    font-size: 26px;
-  }
+    font-size: 26px; }
+
   .header-description {
-    font-size: 14px;
-  }
+    font-size: 14px; }
+
   .events-form {
-    text-align: center;
-  }
+    text-align: center; }
+
   .events-select_box {
-    width: 80%;
-  }
+    width: 80%; }
+
   .prob-result {
     font-size: 26px;
     max-width: 100%;
     width: 100%;
-    margin: 0 0vw;
-  }
+    margin: 0 0vw; }
+
   .events-form_controls__button {
-    width: 100%;
-  }
+    width: 100%; }
+
   .events-form_controls__ps {
     width: 100%;
     text-align: center;
-    margin-top: 10px;
-  }
+    margin-top: 10px; }
+
   .events-form_ps {
-    margin-left: 0;
-  }
+    margin-left: 0; }
+
   .custom-events_title {
     font-size: 26px;
     max-width: 70%;
-    margin: 0 15vw;
-  }
+    margin: 0 15vw; }
+
   .events-form_custom {
-    text-align: center;
-  }
+    text-align: center; }
+
   .custom-events_box {
     width: 80%;
-    margin-bottom: 20px;
-  }
+    margin-bottom: 20px; }
+
   .custom-events_controls {
-    margin-top: 0;
-  }
-}
+    margin-top: 0; } }
+
+/*# sourceMappingURL=media.css.map */
