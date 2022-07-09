@@ -26,8 +26,12 @@ function calcCustom() {
   let primePercentile = Math.random() * (1 - 0.00000001) + 0.00000001;
   let secondaryPercentile = primePercentile / 10000;
   let resultProbCustom = "Вероятность события " + actionValCustom + " " + objectValCustom + " " + placeValCustom + " " + secondaryPercentile + "%";
-  console.log(resultProbCustom);
-  document.getElementById("resCustom").innerHTML = "Вероятность события " + actionValCustom + " " + objectValCustom + " " + placeValCustom + " " + secondaryPercentile + "%";
-  
+  // console.log(resultProbCustom);
+  if ((document.probCustom.actionCustom.value == "") && (document.probCustom.objectCustom.value == "") && (document.probCustom.placeCustom.value == "")) {
+    // alert ("Пожалуйста заполните поля");
+    document.getElementById("resCustom").innerHTML = "Пожалуйста заполните поля"
+  } else {
+    document.getElementById("resCustom").innerHTML = "Вероятность события " + actionValCustom + " " + objectValCustom + " " + placeValCustom + " " + secondaryPercentile + "%";
+  }
 
 }
